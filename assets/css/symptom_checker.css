@@ -1,0 +1,750 @@
+body {
+    background-color: lightcyan;
+    box-sizing: content-box;
+}
+
+.head {
+    text-align: center;
+    font-size: 2rem;
+    color: blueviolet;
+    background-color: #f0f2f5;
+}
+
+.checker {
+    margin-top: 20px;
+}
+
+.checker h1 {
+    align-items: center;
+    background-color: green;
+    color: orangered;
+    box-shadow: -15px -8px 17px rgb(0 0 0 / 60%);
+}
+
+.images img {
+    width: 18rem;
+    height: 15rem;
+    margin-left: 2rem;
+    padding: 2rem;
+    background-color: #282b28;
+    border-radius: 26px;
+    box-shadow: 25px 21px 21px rgb(0 0 0 / 60%);
+}
+
+.images img:hover {
+    outline: 2px solid white;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.images div {
+    border-radius: 4rem;
+}
+
+
+/*.images img:hover{
+      width:23rem;
+      height:23rem;
+}
+*/
+
+.images {
+    display: grid;
+    row-gap: 0.1rem;
+    grid-gap: 0.1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.text {
+    top: 32rem;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    COLOR: #0c0f0c;
+}
+
+.button {
+    text-align: center;
+}
+
+.button:hover {
+    outline: 0.2px solid white;
+    color: #f2f2f2;
+    font-weight: 900;
+    transform: scale(1.3);
+}
+
+.combine button {
+    background-color: lightcyan;
+    font-weight: 500;
+    border: 4px solid;
+    border-radius: 8px;
+    border-color: orange;
+}
+
+
+/* js code*/
+
+.container#blur.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur1.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup1 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup1.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur2.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup2 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup2.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur3.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup3 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup3.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur4.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup4 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup4.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur5.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup5 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup5.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur6.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup6 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup6.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur7.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup7 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup7.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur8.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup8 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup8.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur9.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup9 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup9.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur10.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup10 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup10.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur11.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup11 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup11.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur12.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup12 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup12.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur13.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup13 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup13.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur14.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup14 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup14.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur15.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup15 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup15.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur16.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup16 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup16.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur17.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup17 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup17.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur18.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup18 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup18.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur19.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup19 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup19.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur20.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup20 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup20.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur21.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup21 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup21.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur22.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup22 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup22.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur23.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+#popup23 {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: rgb(32, 206, 250);
+    padding: 50px;
+    box-shadow: 20px 15px 30px rgba(0, 0, 0, .30);
+    visibility: hidden;
+    opacity: -1;
+    transition: 0.2s;
+}
+
+#popup23.active {
+    visibility: visible;
+    top: 50%;
+    opacity: 2;
+    transition: 0.5s;
+}
+
+.container#blur24.active {
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.foot {
+    background-color: green;
+    color: orangered;
+    text-align: center;
+}
+
+.pop {
+    margin-top: 50px;
+}

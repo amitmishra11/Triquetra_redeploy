@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+    <title>The Triquetra</title>
+
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <style>
+  
+      #map {
+          /* background-color: black; */
+        width: 97%;
+        height: 580px;
+        margin: 6% auto;
+        margin-top: 5.3%;
+        margin-bottom: 2%;
+        /* border: 2px solid #1877f2; */
+        box-shadow: -25px 18px 15px rgb(0 0 0 / 60%);
+      }
+  
+      .MAPCONTAINER {
+        background-color: #f0f2f5;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet" />
+    <style>
+      .mapboxgl-popup {
+        max-width: 400px;
+      }
+    </style>
+  </head>
+<body>
+    <%- include('include/_navbar3') %>
+    <section>
+        <div class="MAPCONTAINER">
+          <div id="map"></div>
+        </div>
+      </section>
+</body>
+<script src="js/map.js"></script>
+</html>

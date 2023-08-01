@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+
+html {
+    font-size: 60%;
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: black;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .9rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: orangered;
+}
+
+
+/* .head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: green;
+    padding: 2px;   
+} */
+
+
+/* .heading{
+    color: black;
+} */
+
+.head .logo {
+    color: orangered;
+    font-size: 2.5rem;
+    margin-right: auto;
+}
+
+.main {
+    min-height: 80vh;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    place-items: center;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    background: lightblue;
+}
+
+.box .blog-box .post {
+    width: 100%;
+    /* padding: 2rem; */
+    background: #fff;
+    border: black solid 2px;
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-box {
+    margin-top: 0px;
+}
+
+.box .blog-box .post .image {
+    height: 50rem;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.dropdown-item {
+    font-size: medium;
+}
+
+.box .blog-box .post .title {
+    padding: 2rem;
+    font-size: 2.5rem;
+    color: black;
+    margin-right: 5px;
+}
+
+.navbar-nav {
+    font-size: medium;
+}
+
+.fab {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.box .blog-box .post .text {
+    color: black;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.box .sidebar .box {
+    border: black solid 2px;
+    border-radius: .5rem;
+    overflow: hidden;
+    background: white;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    margin-top: 0px;
+}
+
+.box .sidebar .box .title {
+    padding: 1.5rem;
+    font-size: 2rem;
+    color: white;
+    background: black;
+    text-transform: capitalize;
+}
+
+.box .sidebar .box .about {
+    text-align: center;
+    padding: 1rem 1.5rem;
+}
+
+.box .sidebar .box .about img {
+    height: 100px;
+    width: 100px;
+    /* border-radius: 50%; */
+    /* object-fit: cover; */
+    margin: 1rem 0;
+}
+
+.box .sidebar .box .about h3 {
+    color: orangered;
+    font-size: 2rem;
+}
+
+.box .sidebar .box .about p {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
+
+.box .sidebar .box .about .follow {
+    padding: 1rem 0;
+}
+
+.box .sidebar .box .about .follow a {
+    height: 4rem;
+    line-height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    font-size: 1.7rem;
+    margin: 0 .1rem;
+}
+
+.box .sidebar .box .about .follow a:hover {
+    background: orangered;
+}
+
+.box .sidebar .box .category {
+    padding: 1rem 10rem;
+}
+
+.box .sidebar .box .about {
+    padding: 1rem 5rem;
+}
+
+.box .sidebar .box .p-post {
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.box .sidebar .box .category a {
+    padding: .4rem 0;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box .sidebar .box .category a span {
+    background: black;
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem;
+}
+
+.box .sidebar .box .category a:hover {
+    color: orangered;
+}
+
+.box .sidebar .box .category a:hover span {
+    background-color: orangered;
+}
+
+.box .sidebar .box .p-post {
+    padding: 1rem 4.5rem;
+}
+
+.box .sidebar .box .p-post a {
+    padding: 1rem 0;
+    display: block;
+}
+
+.box .sidebar .box .p-post a h3 {
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.box .sidebar .box .p-post a span {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.box .sidebar .box .p-post a span i {
+    padding-right: .2rem;
+}
+
+.box .sidebar .box .p-post a:hover h3 {
+    color: orangered;
+}
+
+.box .sidebar .box .tags {
+    padding: 1rem;
+}
+
+.box .sidebar .box .tags a {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: .5rem;
+    border: black solid 2px;
+    margin: .5rem;
+}
+
+.box .sidebar .box .tags a:hover {
+    background: black;
+    color: white;
+}
+
+@media (max-width:980px) {
+    html {
+        font-size: 50%;
+    }
+    .head {
+        padding: 1.5rem;
+    }
+    section {
+        padding: 1.8rem;
+    }
+    .box {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+@media (max-width:760px) {
+    #menu-bars {
+        display: inline-block;
+    }
+    .box {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .box .blog-box .post .image {
+        height: 30rem;
+        ;
+    }
+    .footer {
+        flex-flow: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:455px) {
+    html {
+        font-size: 53%;
+    }
+    .contact form .inputBox input {
+        width: 100%;
+    }
+}
+
+.fa {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.fa:hover {
+    color: red;
+}
+
+.far {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.far:hover {
+    color: red;
+}
+
+.heading {
+    display: block;
+    text-align: center;
+}
+
+.follow {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+.post img {
+    height: 100px;
+}

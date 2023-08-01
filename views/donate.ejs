@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/invest.css">
+
+    <!-- title -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js"></script>
+    <title>Aasha | Palette of Hope</title>
+
+</head>
+
+<body>
+
+    <%- include('include/_navbar3') %>
+        <div class="jumbotron-fluid" id="investPage">
+            <div class="card">
+                <div class="container d-flex flex-column justify-content-end card-text card-img-overlay text-center">
+                    <div class="text py-2 mb-5" style="text-align: center; background-color: var(--blue);">
+                        <header class="section-header">
+                            <h2 class="sibans" style="font-size: 50px;">Donate</h2>
+                            <p>Help people to raise fund and save their loved ones.</p>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-4 pb-5" id="investee">
+            <h1 class="text-center pb-4">Browse fundraise requests</h1>
+            <div class="row gx-4 gy-3" id="investee_cards">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6" id="userCard">
+            <div class="card">
+                <div class="box">
+                    <div class="card-img-top">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/aasha-439d3.appspot.com/o/investeeImage%2F2.jpg?alt=media&token=212d13aa-a5b8-48f3-a4d6-c1b3c6cbb69e" alt="investee's image" class="card-img img-fluid img-responsive">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="text-center">Aman</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>&nbsp; Delhi</p>
+                        <p>Treatment of eyes</p>
+                        <p style="color: var(--green);"><strong>Required Amount:&nbsp; </strong>₹5,00,000</p>
+
+                        <form action="#" method="POST">
+                            ₹<input type="text" id="invest_amt" placeholder="Type amount">
+                            <button type="button" id="order-button1">Invest</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="card-img-top">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/aasha-439d3.appspot.com/o/investeeImage%2F2.jpg?alt=media&token=212d13aa-a5b8-48f3-a4d6-c1b3c6cbb69e" alt="investee's image" class="card-img img-fluid img-responsive">
+                    </div>
+                    <div class="card-text">
+                        <h3 class="text-center">Aman</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>&nbsp; Delhi</p>
+                        <p>Treatment of eyes</p>
+                        <p style="color: var(--green);"><strong>Required Amount:&nbsp; </strong>₹5,00,000</p>
+
+                        <form action="#" method="POST">
+                            ₹<input type="text" id="invest_amt" placeholder="Type amount">
+                            <button type="button" id="order-button1">Invest</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <%- include('include/_footer') %>
+</body>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+    console.log("poling");
+    src = "https://cdn.jsdelivr.net/npm/axios@0.26.1/dist/axios.min.js";
+
+    axios.post('/api/payment/order').then((info) => {
+        console.log(info)
+
+        var options = {
+            "key": "rzp_test_TjfI1Q9set4utL",
+            "name": "Triquetra Fundraiser",
+            "description": "Test Transaction",
+            "image": "",
+            "order_id": info.data.id,
+            // "callback_url": "https://www.instagram.com/",
+            "callback_url": "http://localhost:3000/sux",
+
+            "redirect": true,
+            "theme": {
+                "color": "#3399cc"
+            }
+        };
+        var rzp1 = new Razorpay(options);
+
+        document.getElementById('order-button1').onclick = function(e) {
+            rzp1.open();
+            e.preventDefault();
+        }
+    })
+</script>
+
+</html>
