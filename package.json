@@ -24,6 +24,7 @@
     "method-override": "^3.0.0",
     "moment": "^2.29.2",
     "mongoose": "^6.2.10",
+    "mongosh": "^1.10.3",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
     "passport": "^0.5.2",

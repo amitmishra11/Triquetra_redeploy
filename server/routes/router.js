@@ -1,6 +1,6 @@
 const express = require('express');
 const route = express.Router()
-
+const passport=require('passport')
 const Razorpay = require('razorpay');
 const {ensureAuth,ensureGuest}=require('../middleware/auth');
 

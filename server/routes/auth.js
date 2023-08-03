@@ -15,7 +15,6 @@ router.get(
     res.redirect('/index2')
   }
 )
-
 // @desc    Logout user
 // @route   /auth/logout
 router.get('/logout', (req, res) => {
