@@ -20,7 +20,7 @@ People can check hospital beds availibilty and check hospitals on map.
 </ul>
 
 ## Website Demo
-### [Triquetra-Hope of Life](https://triquetra-hackoverflow.herokuapp.com/)
+### [Triquetra-Hope of Life](https://tqt.onrender.com/)
 <br>
 
 ## Contributors
